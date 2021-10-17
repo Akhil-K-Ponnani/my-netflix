@@ -1,48 +1,80 @@
 .banner {
     background-size: cover;
-    height: 448px;
+    background-repeat: no-repeat;
     color: #fff;
+    position: relative;
+    margin-top: 50px;
 }
 
-.content {
-    padding-top: 140px;
-    height: 190px;
-    padding-left: 15px;
+.banner .content {
+    position: absolute;
+    bottom: 1rem;
 }
 
-.title {
-    font-size: 3rem;
-    font-weight: 800;
-    padding-bottom: 0.3 rem;
+.banner .title {
+    font-weight: 700;
 }
 
-button {
+.banner button {
     background: rgba(51, 51, 51, 0.5);
     color: #fff;
-    font-weight: 700;
+    font-size: small;
+    font-weight: 500;
     outline: none;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-right: 1rem;
-    padding: 0.5rem 2rem;
+    margin-right: 0.8rem;
+    padding: 0.3rem 1rem;
 }
 
-button:hover {
+.banner button:hover {
     background: #e6e6e6;
     color: #111;
+    outline: none;
+    border: none;
 }
 
-.description {
-    width: 45rem;
+.banner .description {
     line-height: 1.3;
     padding-top: 1rem;
     font-size: 1rem;
-    height: 80px;
     max-width: 360px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
 }
 
-.fade-bottom {
-    height: 7.4rem;
-    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#111);
+@media all and (max-width:767px) {
+    .banner {
+        height: 200px;
+    }
+
+    .banner .title {
+        font-size: 1.8rem;
+    }
+
+    .banner .description {
+        display: none;
+    }
+
+    .banner .fade-bottom {
+        padding-bottom: 200px;
+        height: 7.4rem;
+        background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#111);
+    }    
+}
+
+@media all and (min-width:768px) {
+    .banner {
+        height: 430px;
+    }
+
+    .banner .fade-left {
+        width: 40rem;
+        height: 100%;
+        background-image: linear-gradient(-90deg,transparent,rgba(37,37,37,0.61),#111);
+    }
 }

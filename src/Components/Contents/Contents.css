@@ -1,0 +1,47 @@
+.content .title {
+    display: flex;
+}
+
+.content .flex-poster {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.content .name {
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+
+.content .flex-poster::-webkit-scrollbar {
+    display: none;
+}
+
+/* Custom styles for different screens */
+@media all and (max-width:767px) {
+    .content .poster {
+        max-width: 33.33%;
+        padding: 5px;
+    }
+    .content .large-poster {
+        max-width: 50%;
+        padding: 5px;
+    }
+}
+
+@media all and (min-width:768px) {
+    .content .poster {
+        max-width: 10%;
+        padding: 5px;
+    }
+    .content .large-poster {
+        max-width: 12.5%;
+        padding: 5px;
+    }
+}
