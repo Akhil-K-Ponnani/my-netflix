@@ -5,19 +5,101 @@ header{
     width: 100%;
     height: 50px;
     top: 0;
+    outline: none;
 }
 
-.logo {
+header .logo {
     position: absolute;
     left: 20px;
     top: 14px;
     height: 23px;
 }
 
-.profile {
+header .search-box {
+    position: absolute;
+    right: 145px;
+    top: 10px;
+    width: 13em;
+    height: 1.9em;
+}
+
+header .search-sm-bg {
+    position: absolute;
+    overflow: hidden;
+    top: 50px;
+    width: 100%;
+    height: 0;
+    background: #111;
+    transition: all 0.3s ease-in-out;
+}
+
+header .search-box-sm {
+    margin-top: 6px;
+}
+
+header .search-box:focus, header .search-box-sm:focus {
+    box-shadow: none;
+}
+
+header .search-box::placeholder, header .search-box-sm::placeholder {
+    font-size: 1rem;
+}
+
+header .search-btn {
     color: #fff;
     position: absolute;
-    right: 20px;
+    right: 140px;
     top: 14px;
     font-size: 23px;
+    cursor: pointer;
+}
+
+header .search-btn:hover {
+    font-weight: 500;
+}
+
+header .wishlist {
+    color: #fff;
+    position: absolute;
+    right: 100px;
+    top: 14px;
+    font-size: 23px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header .wishlist:hover {
+    font-weight: 900;
+}
+
+header .sign-btn {
+    position: absolute;
+    background: #E50914;
+    color: #fff;
+    top: 9.5px;
+    right: 20px;
+    width: 4.3rem;
+    border: none;
+    outline: none;
+    padding: .15rem .4rem;
+}
+
+header .sign-btn:focus {
+    box-shadow: none;
+}
+
+@media all and (max-width:767px) {
+    header .search-box {
+        display: none;
+    }
+
+    header .search-sm-bg.show {
+        height: 55px;
+    }
+}
+
+@media all and (min-width:768px) {
+    header .search-btn {
+        display: none;
+    }
 }

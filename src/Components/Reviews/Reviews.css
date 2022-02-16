@@ -1,0 +1,36 @@
+.review {
+    color: #fff;
+}
+
+.review .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.review .review-content {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.review .rating span {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.review .reviewer-img {
+    width: 40px;
+    height: 40px;
+}
+
+.review .reviewer-name {
+    font-weight: 500;
+    margin-left: 7px;
+}
+
+.review .reviewed-date {
+    font-size: small;
+    font-weight: 500;
+}

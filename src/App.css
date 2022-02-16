@@ -9,11 +9,7 @@ body {
 }
 
 .page {
-    min-height: calc(100vh - 35px);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-.fal:hover {
-    font-weight: 900;
 }

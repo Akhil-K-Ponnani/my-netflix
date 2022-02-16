@@ -1,0 +1,43 @@
+.error {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.hdqwalls.com/wallpapers/4k-money-heist-netflix-u9.jpg');
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 57px);
+}
+
+.error .error-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.error .error-content .title {
+    color: #fff;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.error .error-content .description {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.error .error-content .btn {
+    color: #fff;
+    margin-left: calc(50% - 2rem);
+    background: #E50914;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.error .error-content button:focus {
+    box-shadow: none;
+}

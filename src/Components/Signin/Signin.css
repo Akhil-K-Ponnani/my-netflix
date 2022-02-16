@@ -1,0 +1,72 @@
+.signin {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.hdqwalls.com/wallpapers/4k-money-heist-netflix-u9.jpg');
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 57px);
+}
+
+.signin .signin-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.signin .signin-content .title {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+.signin .signin-content .description {
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.signin .signin-content .input-group-text {
+    background: #fff;
+}
+
+.signin .signin-content input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.signin .signin-content .signin-error {
+    position: absolute;
+    top: 2.5rem;
+    color: #E50914;
+    font-size: small;
+}
+
+.signin .signin-content button {
+    background: #E50914;
+    border: none;
+    outline: none;
+    height: 38px;
+    width: 103px;
+}
+
+.signin .signin-content button:focus {
+    box-shadow: none;
+}
+
+@media all and (max-width:767px) {
+    .signin .signin-content .title {
+        font-size: 2.1rem;
+    }
+
+    .signin .signin-content button {
+        float: right;
+    }
+}
+
+@media all and (min-width:768px) {
+    .signin .signin-content {
+        width: 500px;
+        justify-content: center;
+    }
+}

@@ -1,4 +1,4 @@
-.banner {
+.banner .banner-main {
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
@@ -6,16 +6,50 @@
     margin-top: 50px;
 }
 
-.banner .content {
+.banner .banner-main .content {
     position: absolute;
     bottom: 1rem;
 }
 
-.banner .title {
+.banner .banner-main .title {
     font-weight: 700;
+    margin-bottom: 2px;
 }
 
-.banner button {
+.banner .banner-main .banner-stars {
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.banner .banner-main .banner-stars .star-outer {
+    position: relative;
+    display: inline-block;
+}
+
+.banner .banner-main .banner-stars .star-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+
+.banner .banner-main .banner-stars .star-outer::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    color: #fff;
+}
+
+.banner .banner-main .banner-stars .star-inner::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    color: #F8CE0B;
+}
+
+.banner .banner-main button {
     background: rgba(51, 51, 51, 0.5);
     color: #fff;
     font-size: small;
@@ -28,14 +62,14 @@
     padding: 0.3rem 1rem;
 }
 
-.banner button:hover {
+.banner .banner-main button:hover {
     background: #e6e6e6;
     color: #111;
     outline: none;
     border: none;
 }
 
-.banner .description {
+.banner .banner-main .description {
     line-height: 1.3;
     padding-top: 1rem;
     font-size: 1rem;
@@ -48,33 +82,41 @@
 }
 
 @media all and (max-width:767px) {
-    .banner {
+    .banner .banner-main {
         height: 200px;
     }
 
-    .banner .title {
+    .banner .banner-main .title {
         font-size: 1.8rem;
     }
 
-    .banner .description {
+    .banner .banner-main .description {
         display: none;
     }
 
-    .banner .fade-bottom {
-        padding-bottom: 200px;
+    .banner .banner-main .fade-bottom {
+        padding-bottom: 201px;
         height: 7.4rem;
         background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#111);
-    }    
+    }
+
+    .banner .description-sm {
+        color: #fff;
+    }
 }
 
 @media all and (min-width:768px) {
-    .banner {
+    .banner .banner-main {
         height: 430px;
     }
 
-    .banner .fade-left {
+    .banner .banner-main .fade-left {
         width: 40rem;
         height: 100%;
         background-image: linear-gradient(-90deg,transparent,rgba(37,37,37,0.61),#111);
+    }
+
+    .banner .description-sm {
+        display: none;
     }
 }

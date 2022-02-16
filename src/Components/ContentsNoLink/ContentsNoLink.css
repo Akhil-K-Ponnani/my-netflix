@@ -1,8 +1,8 @@
-.content .title {
+.content-no-link .title {
     display: flex;
 }
 
-.content .flex-poster {
+.content-no-link .flex-poster {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -11,20 +11,20 @@
     scrollbar-width: none;
 }
 
-.content .name {
+.content-no-link .name {
     color: #fff;
     text-align: center;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space:nowrap;
 }
 
-.content .content-stars .star-outer {
+.content-no-link .content-stars .star-outer {
     position: relative;
     display: inline-block;
 }
 
-.content .content-stars .star-inner {
+.content-no-link .content-stars .star-inner {
     position: absolute;
     top: 0;
     left: 0;
@@ -33,42 +33,42 @@
     width: 0;
 }
 
-.content .content-stars .star-outer::before {
+.content-no-link .content-stars .star-outer::before {
     content: "\f005 \f005 \f005 \f005 \f005";
     font-family: 'Font Awesome 5 Pro';
     font-weight: 900;
     color: #fff;
 }
 
-.content .content-stars .star-inner::before {
+.content-no-link .content-stars .star-inner::before {
     content: "\f005 \f005 \f005 \f005 \f005";
     font-family: 'Font Awesome 5 Pro';
     font-weight: 900;
     color: #F8CE0B;
 }
 
-.content .flex-poster::-webkit-scrollbar {
+.content-no-link .flex-poster::-webkit-scrollbar {
     display: none;
 }
 
 /* Custom styles for different screens */
 @media all and (max-width:767px) {
-    .content .poster {
+    .content-no-link .poster {
         max-width: 33.33%;
         padding: 5px;
     }
-    .content .large-poster {
+    .content-no-link .large-poster {
         max-width: 50%;
         padding: 5px;
     }
 }
 
 @media all and (min-width:768px) {
-    .content .poster {
+    .content-no-link .poster {
         max-width: 10%;
         padding: 5px;
     }
-    .content .large-poster {
+    .content-no-link .large-poster {
         max-width: 12.5%;
         padding: 5px;
     }

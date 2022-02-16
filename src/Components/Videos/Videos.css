@@ -1,0 +1,60 @@
+.video .name {
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+
+.video .poster:hover img {
+    background-color: #fff;
+    filter: brightness(50%);
+}
+
+.video .poster:hover .play-btn {
+    display: block;
+}
+
+.video .poster .play-btn {
+    position: absolute;
+    left: 25px;
+    bottom: 50px;
+    display: none;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.video .poster .play-btn:hover {
+    font-weight: 900;
+}
+
+.video .modal-content {
+    background: transparent;
+}
+
+/* Custom styles for different screens */
+@media all and (max-width:767px) {
+    .video .poster {
+        position: relative;
+        padding: 5px;
+    }
+
+    .video .modal-content, .video .play-video {
+        height: 190px;
+        width: 100%;
+    }
+}
+
+@media all and (min-width:768px) {
+    .video .poster {
+        position: relative;
+        max-width: 25%;
+        padding: 5px;
+    }
+
+    .video .modal-content, .video .play-video {
+        width: 560px;
+        height: 315px;
+    }
+}

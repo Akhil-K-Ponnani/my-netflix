@@ -1,17 +1,28 @@
-.content .title {
+.wishlist .wishlist-empty {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.wishlist .wishlist-empty .btn {
+    background: #E50914;
+    color: #fff;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.wishlist .wishlist-empty .btn:focus {
+    box-shadow: none;
+}
+
+.wishlist .title {
     display: flex;
 }
 
-.content .flex-poster {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.content .name {
+.wishlist .name {
     color: #fff;
     text-align: center;
     overflow: hidden;
@@ -19,12 +30,12 @@
     white-space: nowrap;
 }
 
-.content .content-stars .star-outer {
+.wishlist .content-stars .star-outer {
     position: relative;
     display: inline-block;
 }
 
-.content .content-stars .star-inner {
+.wishlist .content-stars .star-inner {
     position: absolute;
     top: 0;
     left: 0;
@@ -33,43 +44,35 @@
     width: 0;
 }
 
-.content .content-stars .star-outer::before {
+.wishlist .content-stars .star-outer::before {
     content: "\f005 \f005 \f005 \f005 \f005";
     font-family: 'Font Awesome 5 Pro';
     font-weight: 900;
     color: #fff;
 }
 
-.content .content-stars .star-inner::before {
+.wishlist .content-stars .star-inner::before {
     content: "\f005 \f005 \f005 \f005 \f005";
     font-family: 'Font Awesome 5 Pro';
     font-weight: 900;
     color: #F8CE0B;
 }
 
-.content .flex-poster::-webkit-scrollbar {
+.wishlist .flex-poster::-webkit-scrollbar {
     display: none;
 }
 
 /* Custom styles for different screens */
 @media all and (max-width:767px) {
-    .content .poster {
+    .wishlist .poster {
         max-width: 33.33%;
-        padding: 5px;
-    }
-    .content .large-poster {
-        max-width: 50%;
         padding: 5px;
     }
 }
 
 @media all and (min-width:768px) {
-    .content .poster {
+    .wishlist .poster {
         max-width: 10%;
-        padding: 5px;
-    }
-    .content .large-poster {
-        max-width: 12.5%;
         padding: 5px;
     }
 }
