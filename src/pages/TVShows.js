@@ -28,10 +28,10 @@ function TVShows() {
             <div className="page">
                 <Header setQuery={setQuery} query={query} contentType='tvshow' />
                 <Banner url={`trending/tv/day?api_key=${API_KEY}&language=en-US`} />
-                <Contents title="Trending" url={`trending/tv/day?api_key=${API_KEY}&language=en-US&with_networks=213`} viewAllUrl='/tvshows/trending' contentType='tvshow' largePoster flexPoster />
+                <Contents title="Trending" url={`trending/tv/day?api_key=${API_KEY}&language=en-US`} viewAllUrl='/tvshows/trending' contentType='tvshow' largePoster flexPoster />
                 {
                     genres.map((genre, index) =>
-                        <Contents title={genre.name} url={`discover/tv?api_key=${API_KEY}&language=en-US&with_genres=${genre.id}&with_networks=213`} viewAllUrl={`/tvshows/genres/${genre.id}`} contentType='tvshow' key={index} flexPoster />
+                        <Contents title={genre.name} url={`discover/tv?api_key=${API_KEY}&language=en-US&with_genres=${genre.id}`} viewAllUrl={`/tvshows/genres/${genre.id}`} contentType='tvshow' key={index} flexPoster />
                     )
                 }
                 <Footer />

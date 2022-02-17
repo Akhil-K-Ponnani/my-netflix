@@ -94,7 +94,7 @@ function Banner(props) {
                             </div>
                         </div>}
                         <button onClick={() => window.open(contents.homepage, '_blank')}>Play</button>
-                        {props.singleContent ? (user ? <button onClick={contentInWishlist ? removeFromList : addToList}>{contentInWishlist ? 'Remove from List' : 'Add to List'}</button> : <button onClick={() => history.push('/login')}>Add to List</button>) : <button onClick={() => history.push('/wishlist')}>My List</button>}
+                        {props.singleContent ? (user ? <button onClick={contentInWishlist ? removeFromList : addToList}>{contentInWishlist ? 'Remove from List' : 'Add to List'}</button> : <button onClick={() => history.push('/signin')}>Add to List</button>) : <button onClick={() => history.push('/wishlist')}>My List</button>}
                         <p className="description">{contents && contents.overview}</p>
                     </div>
                     <div className="fade-bottom"></div>
