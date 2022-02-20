@@ -13,7 +13,7 @@ function Header(props) {
     }
     const signout = () => {
         signOut(firebaseAuth).then(() => {
-            setUser(null)
+            setUser(undefined)
         })
     }
     return (
