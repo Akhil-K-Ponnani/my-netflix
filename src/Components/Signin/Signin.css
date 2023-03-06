@@ -43,11 +43,19 @@
 }
 
 .signin .signin-content button {
-    background: #E50914;
     border: none;
     outline: none;
     height: 38px;
+}
+
+.signin .signin-content .otp-signin button {
+    background: #E50914;
     width: 103px;
+}
+
+.signin .signin-content .other-signin button {
+    background: #fff;
+    color: #495057;
 }
 
 .signin .signin-content button:focus {
@@ -59,9 +67,13 @@
         font-size: 2.1rem;
     }
 
-    .signin .signin-content button {
+    .signin .signin-content .otp-signin button {
         float: right;
     }
+
+    .signin .signin-content .other-signin button {
+        width: 100%;
+    }    
 }
 
 @media all and (min-width:768px) {
@@ -69,4 +81,12 @@
         width: 500px;
         justify-content: center;
     }
+
+    .signin .signin-content .other-signin {
+        margin-top: 8px;
+    }
+
+    .signin .signin-content .other-signin button {
+        width: 222px;
+    }    
 }

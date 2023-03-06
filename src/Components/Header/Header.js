@@ -18,7 +18,7 @@ function Header(props) {
     }
     return (
         <header>
-            <Link to="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png" alt="Netflix Icon" className="logo" /></Link>
+            <Link to="/"><img src="https://fontmeme.com/permalink/230304/7b55dfef8b0ebd20333008e705bf21b6.png" alt="Netflix Icon" className="logo" /></Link>
             {props.contentType && <input type="search" name="search" value={props.query} placeholder={`Search ${props.contentType === 'movie' ? 'Movies' : 'TV Shows'}`} className="form-control search-box" style={{ right: user ? "145px" : "100px" }} onChange={(event) => props.setQuery(event.target.value)} />}
             {props.contentType && <i className='fal fa-search search-btn' style={{ right: user ? "140px" : "100px" }} onClick={handleClickSearchBtn}></i>}
             <div className="container-fluid search-sm-bg" id="search-box-sm">
