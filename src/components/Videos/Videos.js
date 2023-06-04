@@ -11,7 +11,7 @@ function Videos(props) {
             setVideos(response.data.results.reverse())
 
         })
-    })
+    }, [])
     const opts = {
         playerVars: {
             autoplay: 1,
